@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Dungeons and Dragons Session Scheduler allows dungeoneering parties to easily plan out their next adventure session. Have you and a group of explorers enter in time availabilities and receive a clear and concise schedule that actively tracks when all your party members are available to play!
 
-## Available Scripts
+The inspiration for the project stems from the shared frustation of all dungeon delvers - session plannings. My own group is plagued by this common woe, and with my recent experiences creating multiple different self-study projects, I thought to undertake this personal project in my free time in the hopes that my own group might use it someday.
 
-In the project directory, you can run:
+# Planning
 
-### `npm start`
+The project will be built using the React framework as the front-end, Jest as the testing software, and Firebase as the back-end. I hope to replace Firebase with Node.js once I've completed my studies with back-end. It will also use the Nylas Scheduler API as the main software that will compare all listed availabilities and returns valid overlapping times for groups to play.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application will let users make accounts, which will allow them to create campaigns for them to invite other users to. They will be prompted with entering in availabilties, and once more than one user has done so, the scheduler will automatically mark and indicate where all current users have overlapping availability.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Using Figma, a website planning application, I made a simple mock-up of what the schedule page of the application might look like.
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/96889143/198142119-132007f6-ae3f-4c78-ae39-be173656dba6.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application will collect user availabilities for individual campaigns and using the Nylas API, discover overlapping availabilties. The schedule will indicate with two lines where the viable times begin and end.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
